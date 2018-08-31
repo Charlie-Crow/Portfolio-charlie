@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Illustration</title>
+
+    <script>
+        $(document).ready(function () {
+            $("#galerie-big img").hide();
+
+            $("#galerie a").click(function () {
+                if ($("#" + this.rel).is(":hidden")) {
+                    $("#galerie-big img").hide();
+                    $("#" + this.rel).show();
+                }
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <section>
+                <img src="images/01hp.jpg" alt="" id="hpimage">
+            </section>
+
+            <nav class="flex">
+                <a href="01hp.html">
+                    <div>Accueil</div>
+                </a>
+
+                <a href="02illustration-old.html">
+                    <div>Illustration</div>
+                </a>
+
+                <a href="03BD.html">
+                    <div>Bande Dessinée</div>
+                </a>
+
+                <a href="04Webdesign.html">
+                    <div>Web Design</div>
+                </a>
+
+                <a href="05contact.html">
+                    <div>Contact</div>
+                </a>
+            </nav>
+        </header>
+
+        <section class="animated fadeIn slower">
+
+            <div id="galerie">
+                <div id="galerie-nav">
+
+                    <a rel="img1">
+                        <img src="images/img1_min.jpg" />
+                    </a>
+                    <a rel="img2">
+                        <img src="images/img2_min.jpg" />
+                    </a>
+                    <a rel="img3">
+                        <img src="images/img3_min.jpg" />
+                    </a>
+                    <a rel="img4">
+                        <img src="images/img4_min.jpg" />
+                    </a>
+                    <a rel="img5">
+                        <img src="images/img5_min.jpg" />
+                    </a>
+                    <a rel="img6">
+                        <img src="images/img6_min.jpg" />
+                    </a>
+                    <a rel="img7">
+                        <img src="images/img7_min.jpg" />
+                    </a>
+                    <a rel="img8">
+                        <img src="images/img8_min.jpg" />
+                    </a>
+                    <a rel="img9">
+                        <img src="images/img9_min.jpg" />
+                    </a>
+                    <a rel="img10">
+                        <img src="images/img10_min.jpg" />
+                    </a>
+                </div>
+
+                <div id="galerie-big">
+                    <img id="img1" src="images/img1_big.jpg" />
+                    <img id="img2" src="images/img2_big.jpg" />
+                    <img id="img3" src="images/img3_big.jpg" />
+                    <img id="img4" src="images/img4_big.jpg" />
+                    <img id="img5" src="images/img5_big.jpg" />
+                    <img id="img6" src="images/img6_big.jpg" />
+                    <img id="img7" src="images/img7_big.jpg" />
+                    <img id="img8" src="images/img8_big.jpg" />
+                    <img id="img9" src="images/img9_big.jpg" />
+                    <img id="img10" src="images/img10_big.jpg" />
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <p class="copyright">Designed by Charlie Crow</p>
+        </footer>
+    </div>
+</body>
+
+</html>
