@@ -9,7 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Bande Dessinée</title>
+
+    <script>
+        $(document).ready(function () {
+            $("#galerie-big img").hide();
+
+            $("#galerie a").click(function () {
+                if ($("#" + this.rel).is(":hidden")) {
+                    $("#galerie-big img").hide();
+                    $("#" + this.rel).show();
+                }
+
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -45,9 +60,12 @@
         <section class="animated fadeIn slower">
             <div class="code-mirror">
                 <img src="images/code-mirror-banner.png" alt="" style="margin-bottom: 35px; border: 3px double white;">
-                <p class="paragraph">Regis est un ex-soldat américain ayant perdu son bras dans un grave accident d’hélicoptère. Dans ce monde
-                    ébranlé par des menaces venues d'ailleurs, sa carrière semble toucher à sa fin, jusqu’à ce qu’une société
-                    spécialisée dans la robotique lui propose son aide. Il rencontre alors un allié et sauveur assez spécial
+                <p class="paragraph">Regis est un ex-soldat américain ayant perdu son bras dans un grave accident
+                    d’hélicoptère. Dans ce monde
+                    ébranlé par des menaces venues d'ailleurs, sa carrière semble toucher à sa fin, jusqu’à ce qu’une
+                    société
+                    spécialisée dans la robotique lui propose son aide. Il rencontre alors un allié et sauveur assez
+                    spécial
                     : un jeune étudiant de 22 ans, brillant et arrogant au possible.
                     <br>
                     <br>
@@ -57,8 +75,23 @@
                     <img src="images/logo-mangadraft2.jpg" alt="">
                 </a>
             </div>
-        </section>
+            <br /><br />
+            <h1>Bonus : quelques comic strips</h1>
+            <div id="galerie">
+                <div id="galerie-nav">
 
+                    <a rel="vladslab">
+                        <img src="images/vlads-lab_min.jpg" />
+                    </a>
+
+                </div>
+
+                <div id="galerie-big">
+                    <img id="vladslab" src="images/vlads-lab.jpg" />
+                </div>
+            </div>
+
+        </section>
 
 
         <footer>
